@@ -16,12 +16,14 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, input, button, areatext {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
 }
